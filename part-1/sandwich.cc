@@ -1,7 +1,7 @@
 // Christian Jimenez
-// Chrisjimenez29@csu.fullerton.edu
+// chrisjimenez29@csu.fullerton.edu
 // @chrisjimenez36
-// partners: @UlisesFlorezPerez
+// Partners: @UlisesFloresPerez
 
 #include <iostream>
 #include <string>
@@ -10,8 +10,9 @@
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
 
-  if(argc != 4) {
-    std::cerr << "Error: Invalid number of arguments. Usage: program_name PROTEIN BREAD CONDIMENT\n";
+  if (argc != 4) {
+    std::cerr << "Error: Invalid number of arguments. Usage: program_name"
+                 "PROTEIN BREAD CONDIMENT\n";
     return 1;
   }
 
@@ -19,7 +20,9 @@ int main(int argc, char* argv[]) {
   std::string bread = arguments[2];
   std::string condiment = arguments[3];
 
-  std::cout << "Your order: A" << protein << "sandwhich on" << bread << "with" << condiment << "." << std::end1;
+  std::cout << "Your order:\n"
+            << "A " << protein << " sandwich on " << bread << " with "
+            << condiment << "." << std::endl;
 
   return 0;
 }
